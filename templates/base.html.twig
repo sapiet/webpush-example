@@ -2,11 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}WebPush!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+        <script src="{{ asset('libraries/webpush-client/src/webpush-client.js') }}"></script>
+        <script>
+            (function() {
+                let WebPushClient;
+                if (WebPushClientFactory.isSupported()) {
+                    WebPushClientFactory.create({
+                        serviceWorkerPath: 'libraries/webpush-client/src/webpush-sw.js', // Public path to the service worker
+                        serverKey: '{{ bentools_webpush.server_key }}', // https://developers.google.com/web/fundamentals/push-notifications/web-push-protocol#application_server_keys
+                        subscribeUrl: '{{ path('bentools_webpush.subscription') }}', // Optionnal - your application URL to store webpush subscriptions
+                    })
+                        .then(Client => {
+                            WebPushClient = Client;
+                            WebPushClient.subscribe();
+                        })
+                    ;
+                }
+            })();
+        </script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
