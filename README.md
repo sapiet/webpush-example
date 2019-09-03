@@ -8,7 +8,7 @@
 
 `composer install`
 
-- Generate your VAPID keys and follow the instructions:
+- Generate your VAPID keys:
 
 `bin/console webpush:generate:keys`
 
@@ -29,4 +29,5 @@
 - Open your browser and go to http://localhost:8000
 - Log in with john@user / 0000
 - In your terminal, run the following to send a push notification to user with id 1 
-`bin/console app:send 1`
+
+`bin/console app:push 1`
