@@ -1,4 +1,7 @@
 {
+    "bentools/webpush-bundle": {
+        "version": "0.5"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -93,11 +96,26 @@
     "egulias/email-validator": {
         "version": "2.1.11"
     },
+    "fgrosse/phpasn1": {
+        "version": "v2.1.1"
+    },
     "fig/link-util": {
         "version": "1.0.0"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.6.1"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "minishlink/web-push": {
+        "version": "v5.2.4"
     },
     "monolog/monolog": {
         "version": "1.24.0"
@@ -110,6 +128,9 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.2.3"
+    },
+    "paragonie/sodium_compat": {
+        "version": "v1.10.1"
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -126,11 +147,17 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/link": {
         "version": "1.0.0"
     },
     "psr/log": {
         "version": "1.1.0"
+    },
+    "ralouphie/getallheaders": {
+        "version": "3.0.3"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -143,6 +170,9 @@
         "files": [
             "config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "spomky-labs/base64url": {
+        "version": "v2.0.1"
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.2.1"
@@ -504,6 +534,33 @@
     },
     "twig/twig": {
         "version": "v2.11.3"
+    },
+    "web-token/jwt-core": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-key-mgmt": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-signature": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-signature-algorithm-ecdsa": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-signature-algorithm-eddsa": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-signature-algorithm-hmac": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-signature-algorithm-none": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-signature-algorithm-rsa": {
+        "version": "v1.3.9"
+    },
+    "web-token/jwt-util-ecc": {
+        "version": "v1.3.9"
     },
     "webmozart/assert": {
         "version": "1.5.0"
