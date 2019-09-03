@@ -8,7 +8,11 @@
 
 `composer install`
 
-- Create a .env.local file and define the DATABASE_URL variable
+- Generate your VAPID keys and follow the instructions:
+
+`bin/console webpush:generate:keys`
+
+- Create a .env.local file and define the three required environment variables: DATABASE_URL, WEBPUSH_PUBLIC_KEY, WEBPUSH_PRIVATE_KEY
 
 - Create the database and the associated schema by running:
 
@@ -17,10 +21,6 @@
 - Run the data fixtures to create a test user:
 
 `bin/console doctrine:fixtures:load -n`
-
-- Generate your VAPID keys and follow the instructions:
-
-`bin/console webpush:generate:keys`
 
 - Start the web server by running
 
